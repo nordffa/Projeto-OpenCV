@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    <title>Open CV</title>
+{% endblock %}
+
+{% block conteudo %}
+    <form method="POST" action="/filtro_aplicado" enctype="multipart/form-data">
+    <label for="image">Escolha uma imagem:</label>
+    <input type="file" name="image" accept=".jpg,.jpeg,.png">
+    <br>
+    <label for="escolha_filtro">Escolha um filtro:</label>
+    <select name="escolha_filtro">
+        <option value="cinza">Escala de cinza</option>
+        <option value="borrado">Borrado</option>
+    </select>
+    <br>
+    <input type="submit" value="Aplicar Filtro">
+    </form>
+{% endblock %}

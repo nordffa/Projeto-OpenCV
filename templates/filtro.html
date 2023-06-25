@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    <title>Filtro Aplicado!</title>
+{% endblock %}
+
+{% block conteudo %}
+    <img src="{{ url_for('static', filename='imagem_filtrada.jpg') }}" alt="Filtered Image">
+{% endblock %}
