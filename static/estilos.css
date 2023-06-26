@@ -1,0 +1,13 @@
+html {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    line-height: 30px;
+    vertical-align: auto;
+    font-size: small;
+}

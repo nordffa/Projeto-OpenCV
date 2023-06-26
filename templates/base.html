@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/estilos.css">
+        {% block titulo %}{% endblock %}
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block titulo %}{% endblock %}
-</head>
-
-<body>
-    <header>
-        <h1>Projeto OpenCV</h1>
-    </header>
-    <main>
-        {% block conteudo %} {% endblock %}
-    </main>
-    <footer>
-        Copyright 2023 © - Nord / Trufas
-    </footer>
-</body>
-
+    <body>
+        <header>
+            <h1>Projeto OpenCV</h1>
+        </header>
+        <main>
+            {% block conteudo %} {% endblock %}
+        </main>
+        <footer>
+            Copyright 2023 © - Nord / Trufas
+        </footer>
+    </body>
 </html>
